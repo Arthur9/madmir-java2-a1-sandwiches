@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 
 public class TestSandwich {
 
@@ -15,7 +16,35 @@ public class TestSandwich {
 		 * Sandwich instance.
 		 * 
 		 */
-
+		
+		/*Instantiate a sandwich object
+		 * 
+		 */
+		Sandwich artsPBJ = new Sandwich() ;
+		Sandwich CJPBJ = new Sandwich() ;
+		/* Set the Values of PB & J
+		 * 
+		 */
+		artsPBJ.setmainIngred(" Peanut Butter, Jelly ");
+		artsPBJ.setBreadType(" Whole Wheat ");
+		artsPBJ.setPrice(2.75);
+		
+		/*Output the details of my PBJ Sandwich	 */
+		
+		String sandwichMaker;
+		sandwichMaker = JOptionPane.showInputDialog("Who is making the Sandwich?");
+		JOptionPane.showMessageDialog (null, sandwichMaker + "is making a " + artsPBJ.getMainIngred()
+				+ "sandwich on" + artsPBJ.getbreadType() + "the Price is $" + artsPBJ.getPrice());
+		CJPBJ.setmainIngred(" Peanut Butter, Jelly ");
+		CJPBJ.setBreadType(" Whole Wheat ");
+		CJPBJ.setPrice(2.75);
+		
+		/*Output the details of my PBJ Sandwich	 */
+		
+		String sandwichMaker1;
+		sandwichMaker1 = JOptionPane.showInputDialog("Who is making the Sandwich?");
+		JOptionPane.showMessageDialog (null, sandwichMaker1 + "is making a " + CJPBJ.getMainIngred()
+				+ "sandwich on" + CJPBJ.getbreadType() + "the Price is $" + CJPBJ.getPrice());
 	}
 
 }
